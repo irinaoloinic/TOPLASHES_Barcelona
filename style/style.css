@@ -115,6 +115,11 @@ h5{
  text-align: center;
 }
 
+.about-us img{
+  max-height: 600px;
+ border-radius: 10px;
+}
+
 .image-container {
   position: relative;
   overflow: hidden;
@@ -184,7 +189,6 @@ h5{
 .container-services-gallery img:hover{
   filter: contrast(80%);
   transform: scale(1.1);;
-
 }
 
 
