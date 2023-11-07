@@ -345,6 +345,26 @@ margin: 48px 20px;
   .salon-description{
     padding: 60px 30px;
   }
+  .signature{
+    max-width: 250px;
+  }
+  .about-us{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:40px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  .about-us h2{
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: none;
+  }
+  .about-us h1{
+    font-size: 15px;
+    margin: 20px 20px;
+  }
+
   section.grid-footer{
     display: grid;
     grid-template-columns: 1fr;
