@@ -69,8 +69,8 @@ margin: 0;
 }
 
 footer{
-color: var(---light-color);
- margin-top: 60px 20px;
+ color: var(---light-color);
+ margin-top: 10px 20px;
  padding: 60px;
 }
 footer ul{
@@ -79,7 +79,7 @@ footer ul{
 
 footer li{
   list-style: none;
-margin: 0;
+  margin: 0;
   padding: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
@@ -117,27 +117,9 @@ h5{
 
 
 
-.image-container {
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
 
-.overlay {
- position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  opacity: 0; 
-  transition: opacity 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
+
+
 
 .text {
   color: white;
@@ -146,12 +128,6 @@ h5{
   text-decoration: underline; 
 }
 
-
-
-/* Hover effect */
-.image-container:hover .overlay {
-  opacity: 1; /* Show overlay on hover */
-}
 
 
 
@@ -166,7 +142,6 @@ h5{
   padding: 10px;
   margin: 10px auto;
 
- 
  
 }
 
@@ -221,6 +196,8 @@ letter-spacing: 1px;
 
 .welcome-to-salon{
   padding: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 
@@ -310,7 +287,29 @@ margin: 48px 20px;
  font-size: 60px;
 }
 
+.prices img{
+  margin: 0 auto;
+  display: block;
+}
 
+.contacts{
+  display: grid;
+  grid-template-columns: 2fr, 2fr;
+  padding: 100px;
+}
+
+.contact-list ul{
+  padding: 200px 0;
+}
+.contact-list li{
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  opacity: 0.9;
+  color: var(---light-color);
+}
 @media (max-width:960px) {
   header h1{
   font-size: 20px;
@@ -364,7 +363,12 @@ margin: 48px 20px;
     font-size: 15px;
     margin: 20px 20px;
   }
-
+.contact-list ul{
+  padding: 10px;
+}
+.contact-list li{
+  font-size: 10px;
+}
   section.grid-footer{
     display: grid;
     grid-template-columns: 1fr;
