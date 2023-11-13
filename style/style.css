@@ -31,6 +31,7 @@ body{
 }
 nav{
   padding: 20px;
+  position: sticky;
 }
 nav ul{
   padding: 0;
@@ -72,6 +73,7 @@ footer{
  color: var(---light-color);
  margin-top: 10px 20px;
  padding: 60px;
+ 
 }
 footer ul{
   padding: 0;
@@ -98,6 +100,8 @@ footer h3{
 section.grid-footer{
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
+  padding: 200px 10px 100px 10px;
+  
 }
 h4{
   font-size: 20px;
@@ -234,8 +238,8 @@ margin: 48px 20px;
 }
 
 .logo{
-  max-width: 150px;
-  margin: 5px 5px;
+  max-width: 140px;
+  margin: 0;
 }
 .main-button{
   text-decoration: none;
@@ -332,20 +336,23 @@ margin-top: 100px;
   section.grid-footer{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 40px;
+    grid-gap: 20px;
     margin: 0 auto;
     padding-bottom: 30px;
   }
 
   footer{
-    margin:0;
-    padding: 0 20px;
+    margin:0px;
+    padding: 0px 20px;
   }
   footer li{
-   font-size: 20px;
+   font-size: 13px;
    padding: 0;
   }
-
+footer h3{
+  font-size: 15px;
+  margin: 5px 5px;
+}
 nav{
   padding: 5px;
  
@@ -356,6 +363,10 @@ margin: 0px;
 padding: 0 5px;
 font-size: 10px;
 }
+.navigation-mobile{
+  margin-top: 0;
+  padding-top: 0;
+}
   .navigation-btn{
     display: none;
   }
@@ -363,10 +374,17 @@ font-size: 10px;
     font-size: 15px;
   }
   .logo{
-    max-height: 70px;
+    max-height: 50px;
     display: block;
     justify-content: center;
+    
    
+  }
+  .welcome-to-salon img{
+max-width: 380px;
+display: block;
+margin: 0 auto;
+padding:10px 10px ;
   }
  
   .welcome-title{
@@ -375,6 +393,7 @@ font-size: 10px;
   }
   .salon-description{
     padding: 60px 30px;
+    text-align: center;
   }
 
   .signature{
@@ -401,8 +420,8 @@ font-size: 10px;
     
   }
 .about-us img{
-  max-height: 400px;
-  display: block;
+  max-height: 450px;
+ display: block;
  margin: 0 auto;
 
 }
@@ -428,8 +447,22 @@ padding: 20px;
 }
 
 .image-prices{
-  max-width: 400px;
+  max-width: 380px;
 }
+.gallery-images{
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 10px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+ 
 
+}
+.gallery-images img{
+  max-width: 180px;
+  max-height: 200px;
+  padding: 5px;
+  
+}
 
 }
